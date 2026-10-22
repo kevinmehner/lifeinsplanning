@@ -166,7 +166,6 @@
  </div>
 </div>
 
-<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6ad93d2fae7fc72f3419ad68" data-source="WEB_USER"></script>
 <script>
 (function(){var f=document.getElementById('optin');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('optin-msg');var c=f.querySelector('[name=sms_consent]');var g=function(n){var el=f.elements[n];return el?(el.value||'').trim():''};var d={first_name:g('first_name'),last_name:g('last_name'),phone:g('phone'),email:g('email'),message:g('message'),sms_consent:c.checked?'yes':'no',source:'lifeinsplanning.com contact form',submitted_at:new Date().toISOString(),page:location.href};var b=f.querySelector('button');b.disabled=true;b.textContent='Sending...';fetch(f.action,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)}).then(function(){m.textContent=c.checked?'Thanks. Kevin will text you shortly.':'Thanks. Kevin will be in touch.';f.reset();b.disabled=false;b.textContent='Send';}).catch(function(){m.textContent='Something went wrong. Call or text (385) 521-4287 instead.';b.disabled=false;b.textContent='Send';});});})();
 </script>
